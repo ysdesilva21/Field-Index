@@ -1,0 +1,24 @@
+---
+import BrandName from "./ui/BrandName.astro";
+
+const navItems = [
+    {label:"Index", link:"/"},
+    {label:"writing", link:"/writing"},
+    {label:"notes", link:"/notes"},
+    {label:"Projects", link:"/projects"},
+    {label:"About", link:"/about"},
+];
+---
+
+<nav>
+    <BrandName />
+    {
+        navItems.map((item) =>(
+            <a
+                href="{item.link}">
+                
+                {item.label}
+            </a>
+        ))
+    }
+</nav>

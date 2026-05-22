@@ -1,0 +1,95 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;500&display=swap");
+@import "tailwindcss";
+
+
+:root {
+  color-scheme: light;
+  background: #f5f4f0;
+  color: #1a1a18;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f5f4f0;
+  color: #1a1a18;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+::selection {
+  background: #2d5a4a;
+  color: #f5f4f0;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+:focus-visible {
+  outline: 2px solid #2d5a4a;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.prose-publish {
+  max-width: 68ch;
+}
+
+.prose-publish h1,
+.prose-publish h2,
+.prose-publish h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.prose-publish h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.prose-publish p {
+  margin: 1.2rem 0;
+}
+
+.prose-publish blockquote {
+  border-left: 2px solid #8c6d3f;
+  padding-left: 1rem;
+  color: #4b463c;
+  font-style: italic;
+}
+
+.prose-publish code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.875rem;
+  background: #e8e3d8;
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.35rem;
+}
+
+.prose-publish pre {
+  background: #1a1a18;
+  color: #f5f4f0;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 1rem;
+}

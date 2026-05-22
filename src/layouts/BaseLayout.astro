@@ -1,0 +1,19 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/Navbar.astro"
+import BrandName from "./components/ui/BrandName.astro"
+
+const { title = "Field Index" } = Astro.props;
+---
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title><BrandName /></title>
+  </head>
+
+  <body>
+    <slot />
+    <Navbar />
+  </body>
+</html>
